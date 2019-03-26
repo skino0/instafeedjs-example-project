@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    overflow-y:auto;
+    perspective:5px;
+    background:rgb(41, 41, 41);
+}
+/*first container bg */
+#bg {
+    position:absolute;
+    width:100vw;
+    height:75vh;
+    background:rgba(24,23,23,1);
+    z-index:-1;
+
+}
+/*just center instafeed*/
+#center {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+/*all instafeed*/
+#instafeed {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    width:90vw;
+    margin-top:90vh;
+    background:rgba(202, 202, 202,.3);
+    z-index:0;
+    padding:100px 0px 100px 0px;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+}
+
+.instaimg img {
+    width:25vw;
+    height:40vh;
+    margin:70px 10px;
+    padding:0;
+    box-shadow:0px 0px 10px 1.5px rgba(221, 221, 221, 0.3);
+}
+
+/*lieks on every img*/
+.likes {
+    position:absolute;
+    z-index:4!important;
+    font-size:25px;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    font-weight:800;
+    align-items: center;  
+    display:block;  
+    top:50%;
+    padding:5px 20px 5px 10px;
+    -webkit-clip-path: polygon(50% 0%, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 60%, 0 0);
+    clip-path: polygon(50% 0%, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 60%, 0 0);
+    background: rgb(44, 43, 43);
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+}
+/*insta heart like icon*/
+.fa-heart {
+    padding-right:10px;
+    color:#ed4956;
+    
+}
+
+/*imgs general hover element*/
+#ichover {
+    transition-duration:.7s;
+    transform:scale(1);
+    z-index:4;
+
+}
+#ichover:hover {
+    transition-duration:.4s;
+    transform:scale(1.2);
+    z-index:5;
+
+}
+/*header*/
+#header {
+    position:absolute;
+    text-align:center;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-45%);
+    font-size:55px;
+    color:#fff;
+    letter-spacing:5px;
+    width:100%;
+    font-family: 'Montserrat', sans-serif;
+    line-height:70px;
+    text-transform: uppercase!important;
+    animation:headerzoominout 20s infinite;
+}
+
+@keyframes headerzoominout {
+    0%{
+        transform:translate(-50%,-45%)scale(1);
+    }
+    50%{
+        transform:translate(-50%,-45%)scale(1.1);
+    }
+    100%{
+        transform:translate(-50%,-45%)scale(1);
+    }
+}
+
+#underhbg {
+    position:absolute;
+    background:rgba(24,23,23,1);
+    z-index:-1;
+    top:0%;
+    width:100vw;
+    height:70vh;
+}
+
+#igfeed {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+#username{
+    position:absolute;
+    bottom:4%;
+    left:30%;
+    color:rgb(182, 182, 182);
+    font-size:35px;
+    font-family: 'Montserrat', sans-serif;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+
+}
+
+#usr_link {
+    position:absolute;
+    bottom:4%;
+    right:30%;
+    color:rgb(182, 182, 182);
+    font-size:30px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:4.5px;
+    transition-duration:.8s;
+    text-decoration:none;
+}
+
+#usr_link:hover {
+    cursor:pointer;
+    transition-duration:.3s;
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+
+
+
+
+
