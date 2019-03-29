@@ -4,8 +4,6 @@ This project is licensed under the MIT License - see the https://github.com/skin
 @media (max-width:30rem) {
     body {
         background:rgba(155, 155, 155, 0.9)!important;
-
-
     }
     #usr_link,#username {
     font-size: 16px; 
@@ -30,22 +28,18 @@ This project is licensed under the MIT License - see the https://github.com/skin
         line-height:40px;
         transform:translate(-50%,-45%)scale(1)!important;
         animation-delay:0s!important;
-        animation:headermo 5.5s infinite;
         opacity:1!important;
+        animation:headermo 5.5s infinite;
+        -webkit-animation:headermo 5.5s infinite;
+        -moz-animation:headermo 5.5s infinite;
+        -ms-animation:headermo 5.5s infinite;
+        -o-animation:headermo 5.5s infinite;
     }
-    @keyframes headermo {
-        0%{
-            letter-spacing:3px;
-        }
-        50% {
-            letter-spacing:5px;
-        }
-        100%{
-            letter-spacing:3px;
-
-
-        }
-    }
+    @keyframes headermo {0%{letter-spacing:3px;}50% {letter-spacing:5px;}100%{letter-spacing:3px;}}
+    @-webkit-keyframes headermo {0%{letter-spacing:3px;}50% {letter-spacing:5px;}100%{letter-spacing:3px;}}
+    @-moz-keyframes headermo {0%{letter-spacing:3px;}50% {letter-spacing:5px;}100%{letter-spacing:3px;}}
+    @-ms-keyframes headermo {0%{letter-spacing:3px;}50% {letter-spacing:5px;}100%{letter-spacing:3px;}}
+    @-o-keyframes headermo {0%{letter-spacing:3px;}50% {letter-spacing:5px;}100%{letter-spacing:3px;}}
 
     #bg {
         position:absolute;
